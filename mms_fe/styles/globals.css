@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: rgb(79 57 246);
+    --color-secondary: #432dd7;
+}
+
+.PhoneInputInput {
+    outline: none;
+    @apply text-gray-800 text-sm;
+}

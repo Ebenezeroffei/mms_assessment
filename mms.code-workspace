@@ -1,11 +1,11 @@
 {
-	"folders": [
-		{
-			"path": "mms_fe"
-		},
-		{
-			"path": "mms_be"
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "mms_be"
+    },
+    {
+      "path": "mms_fe"
+    }
+  ],
+  "settings": {}
 }
