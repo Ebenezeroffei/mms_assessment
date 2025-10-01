@@ -73,7 +73,7 @@ NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1/
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Ebenezeroffei/mms_assessment
    cd mms
    ```
 
