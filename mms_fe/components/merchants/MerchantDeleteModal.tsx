@@ -7,7 +7,7 @@ import { KeyedMutator } from "swr";
 
 type MerchantDeleteModalProps = {
     itemId: string,
-    mutate: KeyedMutator<Paginator<MerchantEntity> | undefined>,
+    mutate: KeyedMutator<MerchantEntity[] | undefined>,
 }
 
 const MerchantDeleteModal = ({

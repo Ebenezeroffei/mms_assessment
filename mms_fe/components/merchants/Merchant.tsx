@@ -10,7 +10,7 @@ import MerchantsUtils from "@/utils/merchants/merchants_utils"
 
 type MerchantProps = {
     merchant: MerchantEntity,
-    mutate: KeyedMutator<Paginator<MerchantEntity> | undefined>,
+    mutate: KeyedMutator<MerchantEntity[] | undefined>,
 }
 
 const Merchant = ({ merchant, mutate }: Readonly<MerchantProps>) => {

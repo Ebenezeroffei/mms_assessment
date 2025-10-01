@@ -64,7 +64,7 @@ class MerchantsUtils {
     static deleteMerchantAttempt = (
         contextValues: ContextValuesType,
         itemId: string,
-        mutate: KeyedMutator<Paginator<MerchantEntity> | undefined>,
+        mutate: KeyedMutator<MerchantEntity[] | undefined>,
     ) => {
         const { setModalTitle, setModalContent, setShowModal } = contextValues;
 
@@ -78,7 +78,7 @@ class MerchantsUtils {
 
     static deleteMerchant = async (
         itemId: string,
-        mutate: KeyedMutator<Paginator<MerchantEntity> | undefined>,
+        mutate: KeyedMutator<MerchantEntity[] | undefined>,
         setShowModal: Dispatch<SetStateAction<boolean>>,
     ) => {
         setShowModal(_ => false,)

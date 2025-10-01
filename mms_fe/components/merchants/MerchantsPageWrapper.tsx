@@ -13,7 +13,7 @@ import { useId } from "react";
 
 
 const MerchantsPageWrapper = () => {
-    const { data, isLoading, isValidating, error, mutate } = useSWR(Endpoints.merchants.listOrCreate, MiscUtils.getData<Paginator<MerchantEntity>>, {
+    const { data, isLoading, isValidating, error, mutate } = useSWR(Endpoints.merchants.listOrCreate, MiscUtils.getData<MerchantEntity[]>, {
         revalidateOnFocus: false,
     })
 
@@ -33,11 +33,11 @@ const MerchantsPageWrapper = () => {
 
 
     return (
-        data?.results.length ?? 0 > 0
+        data?.length ?? 0 > 0
             ? (
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {
-                        data?.results.map((ele, index) => (
+                        data?.map((ele, index) => (
                             <Merchant
                                 key={`${index}_${randomId}_merchant`}
                                 merchant={ele}
