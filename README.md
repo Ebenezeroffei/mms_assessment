@@ -281,9 +281,9 @@ SECRET_KEY=[PRODUCTION_SECRET_KEY]
 ALLOWED_HOSTS=localhost 127.0.0.1
 ALLOWED_ORIGINS=http://localhost:3000 http://localhost:3030
 DB_NAME=mms_db
-DB_USER=postgres
-DB_PASSWORD=Postgres.crescue7536
-DB_HOST=localhost
+DB_USER=
+DB_PASSWORD=
+DB_HOST=
 DB_PORT=5432
 DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
 ```
